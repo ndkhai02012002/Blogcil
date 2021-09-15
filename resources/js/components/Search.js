@@ -8,7 +8,7 @@ function Searching() {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/api/users`)
+            .get(`/api/users`)
             .then((res) => {
                 var usr = [];
 

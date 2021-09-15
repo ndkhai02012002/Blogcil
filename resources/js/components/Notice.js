@@ -29,7 +29,7 @@ function Notice() {
 
     useEffect(() => {
         axios
-            .get(`http://127.0.0.1:8000/api/notice`)
+            .get(`/api/notice`)
             .then((res) => {
                 for(var i = 0;i<res.data.notice.length; i++) {
                     setNotice((oldNotice) => [...oldNotice,res.data.notice[i]])
